@@ -1,14 +1,5 @@
 
-
-
-FILES:
-
- -README
- -Makefile
- -MapReduceFramework.cpp
- -Search.cpp
-
- IMPLEMENTATION
+# IMPLEMENTATION
 
 Our framework runs in the RunMapReduceFramework function in three stages:
 The first stage is creating the seven threads that handle the mapping, which each one of which handles a chunk of given data at the same time, by mutexes we make sure that the share data are available by one of the threads.
