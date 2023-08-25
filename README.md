@@ -42,3 +42,6 @@ The mapreducebase class is implemented as follows:
 * In the map function, we iterate over all files in a directory and call the emit2 function for each file.
 * In the reduce function, we iterate over all values, sum them, and call the emit3 function for each aggregated value.
 
+<img width="1274" alt="Screen Shot 2023-08-25 at 17 25 01" src="https://github.com/Mojahed91/Multi-threaded/assets/129369338/3eb46333-0bc8-489c-89b1-9888b6719a0c">
+
+
