@@ -76,7 +76,7 @@ std::vector<pthread_t> threads;
 
 
 /**
-* returns curr time string for log
+* Returns current time string for log
 */
 const std::string getCurrentTime()
 {
@@ -89,7 +89,7 @@ const std::string getCurrentTime()
 }
 
 /**
-* print thread for log
+* Print thread for log
 */
 void logCreateThread(std::string ThreadName)
 {
@@ -97,7 +97,7 @@ void logCreateThread(std::string ThreadName)
 }
 
 /**
-* print time of thread for log
+* Print time of thread for log
 */
 void logTerminateThread(std::string ThreadName)
 {
@@ -116,7 +116,7 @@ void checkSysCall(int res, std::string funcName)
 }
 
 /**
-* check if return value of system call is invalid, print error to stderr
+* Check if return value of system call is invalid, print error to stderr
 */
 void checkLockMutex(int res, std::string funcName)
 {
@@ -144,7 +144,7 @@ void unlockThread(pthread_mutex_t thread)
 
 void printLog(std::string state, bool alive)
 {
-  //print create to log
+  //Print create to log
   lockThread(logMutex);
   if(alive == CREATE)
     logCreateThread(state);
@@ -179,7 +179,7 @@ void Emit2(k2Base* key, v2Base* val)
 }
 
 /**
-* add pair of k3Base and v3Base to matcing container of execReduce thread
+* Add pair of k3Base and v3Base to matcing container of execReduce thread
 */
 void Emit3 (k3Base* key, v3Base* val)
 {
